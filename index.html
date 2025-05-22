@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kadai</title>
+    <!-- to use tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[url('images/pink.jpg')] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center h-screen">
+
+    <!-- frameImage>
+    <img
+      src="images/frameHouse.png"
+      alt="タブレット枠"
+      class="fixed top-0 left-0 w-screen h-screen pointer-events-none object-obtain"
+    /> -->
+
+    <!-- Header[start] -->
+    <header
+      class="flex justify-center items-center text-xl sm:text-2xl md:text-3xl italic h-16 sm:h-24"
+    >
+      "First things first — Homework or Snack?"
+    </header>
+
+    <!-- images[start] -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:gap-20 mx-20 px-20 pb-4"
+    >
+      <img
+        src="./images/bath.png"
+        alt="Bath"
+        class="w-32 h-32 object-cover rounded hover:scale-105 hover:shadow-xl transition duration-300 transform"
+      />
+      <img
+        src="./images/dinner.jpg"
+        alt="Dinner"
+        class="w-32 h-32 object-cover rounded hover:scale-105 hover:shadow-xl transition duration-300 transform"
+      />
+      <img
+        src="./images/homework.jpg"
+        alt="Homework"
+        class="w-32 h-32 object-cover rounded hover:scale-105 hover:shadow-xl transition duration-300 transform"
+      />
+      <img
+        src="./images/snack2.jpg"
+        alt="Snack"
+        class="w-32 h-32 object-cover rounded hover:scale-105 hover:shadow-xl transition duration-300 transform"
+      />
+    </div>
+
+    <div class="flex justify-center px-3 py-15 gap-20">
+      <!-- start button[start] -->
+      <button
+        id="startbutton"
+        class="inline-flex text-white bg-indigo-200 border-0 my-5 py-3 px-20 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+      >
+        START !!
+      </button>
+      <!-- stop button[start] -->
+      <button
+        id="stopbutton"
+        class="ml-4 inline-flex text-white bg-orange-200 border-0 my-5 py-3 px-20 focus:outline-none hover:bg-orange-500 rounded text-lg"
+      >
+        STOP !!
+      </button>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <!-- resultText -->
+      <button
+        id="resultText"
+        class="flext flex-center items-center px-1 py-8 text-2xl italic font-bold text-rose-400"
+      ></button>
+      <!-- resultImage -->
+      <img
+        id="resultImage"
+        src="./images/roulette1.png"
+        alt=""
+        class="w-48 h-48 mt-1 my-1 object-contain rounded px-1 py-5"
+      />
+    </div>
+
+    <!-- to activate jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- for connection with script.js -->
+    <script src="js/script.js"></script>
+</html>
