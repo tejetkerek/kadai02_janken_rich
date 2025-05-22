@@ -2,7 +2,7 @@ const imagePaths = [
   "./images/bath.png",
   "./images/dinner.jpg",
   "./images/homework.jpg",
-  "./images/snack.jpg",
+  "./images/snack2.jpg",
 ];
 
 let currentIndex = 0;
