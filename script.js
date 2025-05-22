@@ -8,6 +8,10 @@ const imagePaths = [
 let currentIndex = 0;
 let intervalId = null;
 
+// 音声要素を取得
+const bgm = document.getElementById("bgm");
+const se = document.getElementById("se");
+
 function showNextImage() {
   $("#resultImage").attr("src", imagePaths[currentIndex]);
   currentIndex = (currentIndex + 1) % imagePaths.length;
@@ -20,6 +24,11 @@ $(document).ready(function () {
       $("#resultText").text("何がでるかな～？？");
       showNextImage();
       intervalId = setInterval(showNextImage, 100);
+
+      // BGM再生
+      bgm.currentTime = 0;
+      bgm.play();
+
     }
   });
 
@@ -27,6 +36,14 @@ $(document).ready(function () {
   $("#stopbutton").on("click", function () {
     clearInterval(intervalId);
     intervalId = null;
+
+     // BGM停止
+    bgm.pause();
+
+    // SE再生
+    se.currentTime = 0;
+    se.play();
+
 
     const rand = Math.random();
 
